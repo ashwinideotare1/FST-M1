@@ -1,0 +1,69 @@
+Status: FAIL
+Time Taken: 724
+Size: 714
+Timestamp: Tue Oct 26 12:37:01 IST 2021
+TestStep: POST Request
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code: 201 is not in acceptable list of status codes
+[Response SLA] Response did not meet SLA 724/200
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: POST
+StatusCode: 201
+URL: https://api.github.com/user/keys
+
+---------------- Request ---------------------------
+Authorization: [Bearer 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]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/16.0.1)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [584]
+Content-Type: [application/json]
+
+POST https://api.github.com/user/keys HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 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
+Content-Length: 584
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/16.0.1)
+
+{
+ "title":"TestKey",
+ "key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9pLmQBbQ4q/0CpFR2fcQMlfXrke9fuuomGgD2vIK2VcVpyFxg7FlsGN4WrMqPkxXTyFyOXgOHM9m4cbHYKfayqONIMxxMScPBDkbbtFuZeYVO/g6k5nuKeqKiKgWF+QBsGyu4FstZG2mSHj+I5z2k8FKaRo18E3c+TdfTthPOnhfugaJeRBq8ZEURiucUiZswAZSwSkAZOjsMi686Kh7J0LK05AmbIINoQqKlLtzqP0rH8aEbxoL9VWwYzrf6LUGHISY9QDoZKetRSESHZ3cNdUkAOQ28J2oCOH+u8mlMBVjCqp58kizdoTdBPqJwK/XSNChPRKFDs7Uf/YGmMy6IkxlXiZiRTtEPEBEaju61V04EhQHycG0I0veTbpqRrkAVjTe9uMzEg+Zmx/fbGqqRevl2YFju6AjS8SxrmnY0994vGT5KHEeummqIJcVICwAINjxP6BDgDl5SiqsLpetZP9mkb5OoTPRMUcmOsDWEHchmDm4hotqJHXeP/cAsbmk=",
+
+---------------- Response --------------------------
+X-Accepted-OAuth-Scopes: [admin:public_key, write:public_key]
+Server: [GitHub.com]
+X-RateLimit-Resource: [core]
+X-RateLimit-Used: [13]
+Access-Control-Allow-Origin: [*]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4987]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+#status#: [HTTP/1.1 201 Created]
+Content-Length: [714]
+X-XSS-Protection: [0]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [23F6:15DB:420B4B:4C9575:6177A915]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1635232682]
+Date: [Tue, 26 Oct 2021 07:07:02 GMT]
+Cache-Control: [private, max-age=60, s-maxage=60]
+ETag: ["bf0729510205bc1151173734de75c8beaba1107e17edc4d74b2955d865a804d9"]
+Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+X-OAuth-Scopes: [admin:public_key, user:email]
+github-authentication-token-expiration: [2021-11-25 05:59:32 UTC]
+Location: [https://api.github.com/user/keys/58430096]
+
+{"id":58430096,"key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9pLmQBbQ4q/0CpFR2fcQMlfXrke9fuuomGgD2vIK2VcVpyFxg7FlsGN4WrMqPkxXTyFyOXgOHM9m4cbHYKfayqONIMxxMScPBDkbbtFuZeYVO/g6k5nuKeqKiKgWF+QBsGyu4FstZG2mSHj+I5z2k8FKaRo18E3c+TdfTthPOnhfugaJeRBq8ZEURiucUiZswAZSwSkAZOjsMi686Kh7J0LK05AmbIINoQqKlLtzqP0rH8aEbxoL9VWwYzrf6LUGHISY9QDoZKetRSESHZ3cNdUkAOQ28J2oCOH+u8mlMBVjCqp58kizdoTdBPqJwK/XSNChPRKFDs7Uf/YGmMy6IkxlXiZiRTtEPEBEaju61V04EhQHycG0I0veTbpqRrkAVjTe9uMzEg+Zmx/fbGqqRevl2YFju6AjS8SxrmnY0994vGT5KHEeummqIJcVICwAINjxP6BDgDl5SiqsLpetZP9mkb5OoTPRMUcmOsDWEHchmDm4hotqJHXeP/cAsbmk=","url":"https://api.github.com/user/keys/58430096","title":"TestKey","verified":true,"created_at":"2021-10-26T07:07:02Z","read_only":false}
